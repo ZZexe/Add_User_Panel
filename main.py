@@ -44,40 +44,33 @@ def Menu():
     
       
     print(title)
-    question = int(input("""What do you want do? 
-                         Answer : """))
+    question = int(input("What do you want do?\nAnswer : "))
 
     while True:
         if question == 1:
             AddUser()
-            adduserques = input("""Do you wanna contuniu? (Y/N) 
-                                Answer : """)
+            adduserques = input("Do you wanna contuniu? (Y/N)\nAnswer : ")
             if adduserques == "Y":
                 AddUser()
             if adduserques == "N":
                 print(title)
-                question = int(input("""What do you want do? 
-                         Answer : """))
+                question = int(input("What do you want do?\nAnswer : "))
             else :
-                adduserques = input("""Do you wanna contuniu? (Y/N) 
-                                Answer : """)
+                adduserques = input("Do you wanna contuniu? (Y/N)\nAnswer : ")
         if question == 2:
             DeleteAllUser()
             print("\nDeleted All User!!!!!!\n")
             print(title)
-            question = int(input("""What do you want do? 
-                         Answer : """))
+            question = int(input("What do you want do?\nAnswer : "))
         if question == 3:
             ShowUsers()
             print(title)
-            question = int(input("""What do you want do? 
-                         Answer : """))
+            question = int(input("What do you want do?\nAnswer : "))
         if question == 4:
             exit()
         else :
             print(title)
-            question = int(input("""What do you want do? 
-                         Answer : """))
+            question = int(input("What do you want do?\nAnswer : "))
 
     
 Menu()
